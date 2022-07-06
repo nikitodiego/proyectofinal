@@ -1,14 +1,21 @@
 # proyectofinal
 
 Aplicación Backend Node JS con Express, registro y autenticación utilizando Passport Local, 
-encriptado de password con Bcrypt y renderizado con motor de plantillas ejs-mate.
-
-Incluye connect-flash para mensajes entre las distintas páginas del sitio, y subida de imágenes al servidor con Multer.
+encriptado de password con Bcrypt y renderizado con motor de plantillas ejs-mate. 
+Incluye subida de imágenes al servidor con Multer.
 Se utiliza Winston para registro de logs.
 
 Dbaas: Mongo DB.
 
 PaaS: Heroku.
+
+En cuanto a la implementación de patrones:
+
+1) Patrón Singleton en el contenedor de persistencia. 
+
+2) Se crea la clase Factory a partir de la cual se generan las DAOs dependiendo de la persistencia. 
+
+3) En los routers se genera la instancia mediante el patrón builder (métodos aplicados consecutivamente).
 
 Para correr el proyecto, ejecutar en consola: "npm run start".
 
@@ -18,8 +25,7 @@ user: nicojapaz@gmail.com
 
 password: test
 
-
-Endpoints:
+Endpoints de usuario:
 
 GET / : Ruta raíz. 
 
@@ -68,7 +74,7 @@ Resulta más eficiente el modo cluster (media de respuestas por segundo y latenc
 
 En cuanto a los endpoints de la API, siguen funcionando tal cual la segunda entrega:
 
-Endpoints Productos:
+Endpoints API:
 
 GET /api/productos  : Lista todos los productos.
 
