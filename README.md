@@ -15,7 +15,7 @@ En cuanto a la implementación de patrones:
 
 2) Se crea la clase Factory a partir de la cual se generan las DAOs dependiendo de la persistencia. 
 
-3) En los routers se genera la instancia mediante el patrón builder (métodos aplicados consecutivamente).
+3) En los routers se genera la instancia de la clase Factory mediante el patrón builder (métodos aplicados consecutivamente).
 
 Para correr el proyecto, ejecutar en consola: npm run start.
 
