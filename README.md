@@ -17,7 +17,7 @@ En cuanto a la implementación de patrones:
 
 3) En los routers se genera la instancia mediante el patrón builder (métodos aplicados consecutivamente).
 
-Para correr el proyecto, ejecutar en consola: "npm run start".
+Para correr el proyecto, ejecutar en consola: npm run start.
 
 Usuario ya registrados como ejemplo (para probar inicio de sesión):
 
@@ -57,6 +57,10 @@ disponibles (componentes card). La sesión permanece abierta 30 segundos por seg
 POST /profile : Se genera la orden de compra, se envía un mail y un sms al usuario con la lista de productos de su carrito.
 
 GET /logout : Se cierra la sesión.
+
+Para correr el archivo de testing, ejecutar en consola:
+
+npm run test
 
 Para correr en modo fork ejecutar en consola:
 
